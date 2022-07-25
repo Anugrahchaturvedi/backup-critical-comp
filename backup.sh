@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 set -e; #exit if found any error
 kubectl get cm aws-auth -n kube-system -o yaml > aws-auth-cm.yaml
 kubectl get cm kube-proxy -n kube-system -o yaml > kube-proxy-cm.yaml
